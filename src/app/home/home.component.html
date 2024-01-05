@@ -1,0 +1,16 @@
+
+<app-header [playerFlag]="playerNumber"></app-header>
+<div class="image-container">
+    <div #innerDiv1 class="div-to-move1">1</div>
+    <div #innerDiv2 class="div-to-move2">2</div>
+    <div #containerDiv class="image-wrapper">
+
+        <div #outerDiv *ngFor="let numbers of boardArray;let i=index" class="Noboxes" id="box{{numbers}}">
+         
+
+         
+        </div>
+        <!-- <img src="../../assets/images/sl.jpg" alt="snakeandladderbackground" srcset=""> -->
+    </div>
+</div>
+<app-dice [initialText]="DiceInitialText"  [passRandomNumber]="randomInteger"(click)="randomIntegerGenerator()"></app-dice>    

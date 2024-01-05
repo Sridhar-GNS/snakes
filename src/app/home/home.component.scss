@@ -1,0 +1,93 @@
+.image-container{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    user-select: none;
+}
+
+
+.image-wrapper{
+    height:80vh;
+    width:80vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+position:relative;
+background-image:url(../../assets/images/sl.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+  
+ 
+}
+.image-container .image-wrapper img{
+    height:100%;
+    width:100%;
+    position:absolute;
+    user-select:none;
+    /* opacity:0.5;     */
+    /* display:none;    */
+    
+}
+
+.image-container .image-wrapper .Noboxes{
+    /* height:50px;
+    width:50px; */
+    flex-basis:10%; 
+    aspect-ratio: 1/1;
+    border:1px solid #000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bolder;
+}
+
+.div-to-move1,.div-to-move2{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background-color:#67ea0f;
+    position:absolute;
+    z-index:100;
+    border:2px solid #000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bolder;
+}
+
+.div-to-move2{
+    background-color:rgb(16, 236, 244);
+}
+
+
+@media screen and (max-width:600px) {
+
+    .image-wrapper{
+   width:300px;
+   height:300px;
+    /* aspect-ratio: 1/1; */
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+position:relative;
+background-size:cover;
+background-position:center;
+  
+ 
+}
+.image-container .image-wrapper img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+    position:absolute;
+    user-select:none;
+    /* opacity:0.5;     */
+    top:20px;
+    /* display:none;    */
+    
+}
+}
